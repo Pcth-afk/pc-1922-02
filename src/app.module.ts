@@ -8,6 +8,7 @@ import { UsersModule } from 'src/modules/users/users.module';
 import { CategoriesModule } from './modules/categories/categories.module';
 import { GoalsModule } from './modules/goals/goals.module';
 import { TransactionsModule } from './modules/transactions/transactions.module';
+import { AuthModule } from './auth/auth.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -24,6 +25,7 @@ import { TransactionsModule } from './modules/transactions/transactions.module';
     CategoriesModule,
     TransactionsModule,
     GoalsModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
